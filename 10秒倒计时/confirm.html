@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 300px;
+				height: 500px;
+				margin: 20px auto;
+				background: #eee;
+				padding: 20px;	
+			}
+			button{
+				margin:30px 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>商品：web前端</p>
+			<p>原价：1980元</p>
+			<p>现价：198元</p>
+			<p>内容：html css js</p>
+			<p>
+				<button type="button">取消</button>
+				<button type="button">支付</button>
+			</p>
+		</div>
+		
+		<script type="text/javascript">
+			 document.getElementsByTagName('button')[1].onclick =function(){
+				 let res = window.confirm('您确定要支付吗')
+				 if (res) {
+				 	location.href = 'success.html'
+				 }
+			 }
+		</script>
+	</body>
+</html>
